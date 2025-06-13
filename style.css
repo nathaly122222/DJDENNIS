@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+
+
+:root{
+    --background:#000;
+    --text:#fff;
+    --highlight:#ff1ead;
+}
+body{
+    background: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    transition: 0.5s background ease;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.theme-switch{
+    --background: #fff;
+    --text: #000;
+    color: var(--text);
+    width: 70px;
+    height: 30px;
+    background: var(--highlight);
+    border-radius: 50px;
+    position: relative;
+}
+.theme-switch . switch{
+    background: white;
+    whidth: 24px;
+    height: 24px;
+    background: var(--background);
+    border-radius: 100%;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    trasition: 0.5 all ease;
+
+}
